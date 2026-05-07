@@ -12,14 +12,14 @@
   --vu-white:      #FFFFFF;
   --gold-grad: linear-gradient(135deg, #FEEEB6 0%, #CFAE70 45%, #B49248 100%);
 
-  --cat-mechanics: #7A5209;
-  --cat-em:        #1C1C1C;
-  --cat-waves:     #4A6B57;
-  --cat-heat:      #B85C00;
-  --cat-fluids:    #3A6E7A;
-  --cat-optics:    #5C4A00;
-  --cat-modern:    #4A4A4A;
-  --cat-misc:      #6B5A3A;
+  --cat-mechanics: #37474F;
+  --cat-em:        #6A1B9A;
+  --cat-waves:     #1B5E20;
+  --cat-heat:      #B71C1C;
+  --cat-fluids:    #006064;
+  --cat-optics:    #E65100;
+  --cat-modern:    #0D47A1;
+  --cat-misc:      #4E342E;
 
   --radius: 6px;
   --shadow: 0 2px 12px rgba(28,28,28,0.10);
