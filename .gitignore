@@ -1,0 +1,6 @@
+physics-demos.html
+node_modules/
+dist/
+build/
+prompt.md
+.claude
