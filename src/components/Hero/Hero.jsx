@@ -1,10 +1,12 @@
 import { DEMOS } from '../../data/demos.js'
 import { CAT_META } from '../../data/categories.js'
+import { VIDEOS } from '../../data/videos.js'
 import styles from './Hero.module.css'
 
 export default function Hero() {
   const demoCount = DEMOS.length
   const catCount = Object.keys(CAT_META).length
+  const videoCount = Object.values(VIDEOS).reduce((sum, cat) => sum + cat.items.length, 0)
 
   return (
     <div className={styles.hero}>
@@ -32,16 +34,17 @@ export default function Hero() {
           <span className={styles.statNum}>{demoCount}</span>
           <span className={styles.statLabel}>Demonstrations</span>
         </div>
+                <div className={styles.statDivider} />
+        <div className={styles.statItem}>
+          <span className={styles.statNum}>{videoCount}</span>
+          <span className={styles.statLabel}>Videos</span>
+        </div>
         <div className={styles.statDivider} />
         <div className={styles.statItem}>
           <span className={styles.statNum}>{catCount}</span>
           <span className={styles.statLabel}>Subject Areas</span>
         </div>
-        <div className={styles.statDivider} />
-        <div className={styles.statItem}>
-          <span className={styles.statNum}>All</span>
-          <span className={styles.statLabel}>Introductory Courses</span>
-        </div>
+
       </div>
     </div>
   )
