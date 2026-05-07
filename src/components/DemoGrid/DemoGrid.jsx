@@ -1,5 +1,4 @@
 import { useState, useEffect, useRef } from 'react'
-import { motion, AnimatePresence } from 'framer-motion'
 import { DEMOS } from '../../data/demos.js'
 import DemoCard from '../DemoCard/DemoCard.jsx'
 import styles from './DemoGrid.module.css'
@@ -45,7 +44,6 @@ export default function DemoGrid({ demos, onSelectDemo }) {
         )}
       </p>
       <div className={styles.demoGrid}>
-        <AnimatePresence>
           {pageDemos.length === 0 ? (
             <div className={styles.noResults}>
               <strong>No results found</strong>
@@ -53,19 +51,11 @@ export default function DemoGrid({ demos, onSelectDemo }) {
             </div>
           ) : (
             pageDemos.map(demo => (
-              <motion.div
-                key={demo.ref}
-                layout
-                initial={{ opacity: 0, y: 16 }}
-                animate={{ opacity: 1, y: 0 }}
-                exit={{ opacity: 0, scale: 0.97 }}
-                transition={{ duration: 0.2 }}
-              >
+              <div key={demo.ref}>
                 <DemoCard demo={demo} onSelect={onSelectDemo} />
-              </motion.div>
+              </div>
             ))
           )}
-        </AnimatePresence>
       </div>
 
       {totalPages > 1 && (
