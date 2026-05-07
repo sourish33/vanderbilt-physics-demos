@@ -1,0 +1,125 @@
+.footer {
+  background: var(--vu-black);
+  border-top: 1px solid rgba(207, 174, 112, 0.18);
+}
+
+.footerInner {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 56px 28px 48px;
+  display: grid;
+  grid-template-columns: 1.4fr 1fr 1fr;
+  gap: 48px;
+}
+
+.col {}
+
+.colBrand {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--vu-gold);
+  opacity: 0.75;
+  margin-bottom: 4px;
+}
+
+.colSub {
+  font-family: 'Libre Caslon Text', serif;
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--vu-white);
+  margin-bottom: 14px;
+}
+
+.colHeading {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 10.5px;
+  font-weight: 600;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--vu-gold);
+  margin-bottom: 16px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid rgba(207, 174, 112, 0.15);
+}
+
+.colText {
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.45);
+  line-height: 1.7;
+}
+
+.colText strong {
+  color: rgba(255, 255, 255, 0.7);
+  font-weight: 500;
+}
+
+.colText a {
+  color: var(--vu-gold);
+  text-decoration: none;
+  opacity: 0.85;
+}
+
+.colText a:hover {
+  opacity: 1;
+  text-decoration: underline;
+}
+
+.colLinks {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.colLinks a {
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.5);
+  text-decoration: none;
+  transition: color 0.18s ease;
+}
+
+.colLinks a:hover {
+  color: var(--vu-gold);
+}
+
+.footerBar {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 18px 28px;
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 11.5px;
+  color: rgba(255, 255, 255, 0.28);
+}
+
+.footerBar a {
+  color: rgba(255, 255, 255, 0.28);
+  text-decoration: none;
+}
+
+.footerBar a:hover {
+  color: rgba(255, 255, 255, 0.55);
+}
+
+.barDot {
+  opacity: 0.4;
+}
+
+@media (max-width: 860px) {
+  .footerInner {
+    grid-template-columns: 1fr 1fr;
+    gap: 36px;
+  }
+}
+
+@media (max-width: 560px) {
+  .footerInner {
+    grid-template-columns: 1fr;
+    padding: 40px 28px 32px;
+  }
+}

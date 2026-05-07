@@ -1,0 +1,97 @@
+.controls {
+  background: var(--vu-white);
+  border-bottom: 1px solid var(--vu-gray-light);
+  padding: 20px 28px;
+  position: sticky;
+  top: 60px;
+  z-index: 90;
+}
+
+.controlsInner {
+  max-width: 1300px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.searchWrap {
+  position: relative;
+  max-width: 520px;
+}
+
+.searchWrap svg {
+  position: absolute;
+  left: 14px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--vu-gray-dark);
+  pointer-events: none;
+}
+
+.searchInput {
+  width: 100%;
+  padding: 11px 14px 11px 44px;
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  border: 1.5px solid var(--vu-sand);
+  border-radius: var(--radius);
+  background: var(--vu-cream);
+  color: var(--vu-black);
+  outline: none;
+  transition: border-color var(--transition), box-shadow var(--transition);
+}
+
+.searchInput:focus {
+  border-color: var(--vu-gold);
+  box-shadow: 0 0 0 3px rgba(207, 174, 112, 0.18);
+}
+
+.searchInput::placeholder {
+  color: var(--vu-gray-dark);
+}
+
+.filterRow {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.filterLabel {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: 10.5px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--vu-gray-dark);
+  margin-right: 4px;
+  flex-shrink: 0;
+}
+
+.filterBtn {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: 10.5px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding: 5px 14px;
+  border-radius: 20px;
+  border: 1.5px solid var(--vu-sand);
+  background: transparent;
+  color: var(--vu-gray-dark);
+  cursor: pointer;
+  transition: all var(--transition);
+  font-weight: 500;
+}
+
+.filterBtn:hover {
+  border-color: var(--vu-gold);
+  color: var(--vu-gold-dark);
+}
+
+.filterBtn.active {
+  background: var(--vu-black);
+  border-color: var(--vu-black);
+  color: var(--vu-gold);
+}

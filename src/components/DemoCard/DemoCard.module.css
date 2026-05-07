@@ -1,0 +1,132 @@
+.demoCard {
+  background: var(--vu-white);
+  border-radius: var(--radius);
+  border: 1px solid var(--vu-gray-light);
+  border-left: 5px solid var(--cat-color, var(--vu-gold));
+  box-shadow: var(--shadow);
+  cursor: pointer;
+  transition: transform var(--transition), box-shadow var(--transition), border-color var(--transition);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  position: relative;
+  height: 100%;
+}
+
+.demoCard:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-hover);
+  border-color: var(--cat-color, var(--vu-gold));
+  border-left-color: var(--cat-color, var(--vu-gold));
+}
+
+.cardBody {
+  padding: 22px 24px 18px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.cardTop {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.cardRef {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 10.5px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--vu-gray-dark);
+  flex-shrink: 0;
+  padding-top: 1px;
+}
+
+.cardBadges {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+.catBadge {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 10px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding: 3px 10px;
+  border-radius: 20px;
+  color: var(--vu-white);
+  flex-shrink: 0;
+}
+
+.cardTitle {
+  font-family: 'Libre Caslon Text', serif;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 1.3;
+  color: var(--vu-black);
+  margin-bottom: 8px;
+}
+
+.cardDesc {
+  font-size: 13.5px;
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 12px;
+  flex: 1;
+}
+
+.cardPhysics {
+  font-size: 12px;
+  color: var(--vu-gray-dark);
+  background: var(--vu-cream);
+  border-radius: 4px;
+  padding: 8px 12px;
+  margin-bottom: 14px;
+  line-height: 1.45;
+}
+
+.cardPhysics strong {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: 10.5px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--vu-gray-dark);
+  display: block;
+  margin-bottom: 3px;
+}
+
+.cardFooter {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 1px solid var(--vu-gray-light);
+  padding-top: 12px;
+}
+
+.cardTime {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 10.5px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--vu-gray-dark);
+}
+
+.cardArrow {
+  font-size: 16px;
+  color: var(--vu-sand);
+  transition: color var(--transition), transform var(--transition);
+}
+
+.demoCard:hover .cardArrow {
+  color: var(--cat-color, var(--vu-gold-dark));
+  transform: translateX(3px);
+}

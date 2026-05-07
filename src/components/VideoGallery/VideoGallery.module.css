@@ -1,0 +1,206 @@
+.videosSection {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 28px 28px 56px;
+}
+
+.resultsInfo {
+  font-size: 13px;
+  color: var(--vu-gray-dark);
+  margin-bottom: 28px;
+  font-weight: 400;
+}
+
+.resultsInfo strong {
+  color: var(--vu-black);
+}
+
+.filterNote {
+  color: var(--vu-gray-dark);
+}
+
+.noResults {
+  padding: 60px 0;
+  text-align: center;
+}
+
+.noResults strong {
+  display: block;
+  font-family: 'Libre Caslon Text', serif;
+  font-size: 22px;
+  margin-bottom: 8px;
+  color: var(--vu-black);
+}
+
+.noResults p {
+  color: var(--vu-gray-dark);
+  font-size: 15px;
+}
+
+/* ── Category section ─────────────────────────────── */
+
+.videoCatSection {
+  margin-bottom: 44px;
+}
+
+.videoCatHeader {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 14px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid var(--vu-gray-light);
+}
+
+.videoCatDot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.videoCatLabel {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: 11px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--vu-black);
+  flex: 1;
+}
+
+.videoCatCount {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 10.5px;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--vu-gray-dark);
+}
+
+/* ── Video list rows ──────────────────────────────── */
+
+.videoList {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.videoItem {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  background: var(--vu-white);
+  border: 1px solid var(--vu-gray-light);
+  border-left: 4px solid var(--cat-color, var(--vu-gold));
+  border-radius: var(--radius);
+  padding: 14px 18px;
+  text-decoration: none;
+  color: inherit;
+  transition: transform var(--transition), box-shadow var(--transition), border-color var(--transition);
+  box-shadow: var(--shadow);
+}
+
+.videoItem:hover {
+  transform: translateX(4px);
+  box-shadow: var(--shadow-hover);
+  border-color: var(--cat-color, var(--vu-gold));
+  border-left-color: var(--cat-color, var(--vu-gold));
+}
+
+.videoIcon {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--vu-cream);
+  color: var(--cat-color, var(--vu-gold-dark));
+  transition: background var(--transition), color var(--transition);
+}
+
+.videoItem:hover .videoIcon {
+  background: var(--cat-color, var(--vu-gold-dark));
+  color: var(--vu-white);
+}
+
+.videoInfo {
+  flex: 1;
+  min-width: 0;
+}
+
+.videoTitle {
+  font-family: 'Libre Caslon Text', serif;
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--vu-black);
+  margin-bottom: 3px;
+  line-height: 1.3;
+}
+
+.videoDesc {
+  font-size: 13px;
+  color: var(--vu-gray-dark);
+  line-height: 1.5;
+}
+
+.videoArrow {
+  color: var(--vu-sand);
+  flex-shrink: 0;
+  font-size: 16px;
+  transition: color var(--transition), transform var(--transition);
+}
+
+.videoItem:hover .videoArrow {
+  color: var(--cat-color, var(--vu-gold-dark));
+  transform: translateX(3px);
+}
+
+/* ── Pagination ───────────────────────────────────── */
+
+.pagination {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-top: 12px;
+  padding-top: 12px;
+  border-top: 1px solid var(--vu-gray-light);
+}
+
+.pageBtn {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: 10.5px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding: 6px 16px;
+  border-radius: 20px;
+  border: 1.5px solid var(--vu-sand);
+  background: transparent;
+  color: var(--vu-gray-dark);
+  cursor: pointer;
+  transition: all var(--transition);
+}
+
+.pageBtn:hover:not(:disabled) {
+  border-color: var(--vu-gold);
+  color: var(--vu-gold-dark);
+}
+
+.pageBtn:disabled {
+  opacity: 0.35;
+  cursor: not-allowed;
+}
+
+.pageInfo {
+  font-size: 12.5px;
+  color: var(--vu-gray-dark);
+}
+
+@media (max-width: 600px) {
+  .videosSection {
+    padding: 20px 16px 40px;
+  }
+}

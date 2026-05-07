@@ -1,0 +1,50 @@
+:root {
+  --vu-black:      #1C1C1C;
+  --vu-gold:       #CFAE70;
+  --vu-gold-dark:  #946E24;
+  --vu-gold-light: #ECB748;
+  --vu-cream:      #F5F3EF;
+  --vu-sand:       #E0D5C0;
+  --vu-gray-dark:  #777777;
+  --vu-gray-light: #E4E4E4;
+  --vu-sky:        #B3C9CD;
+  --vu-sage:       #8BA18E;
+  --vu-white:      #FFFFFF;
+  --gold-grad: linear-gradient(135deg, #FEEEB6 0%, #CFAE70 45%, #B49248 100%);
+
+  --cat-mechanics: #7A5209;
+  --cat-em:        #1C1C1C;
+  --cat-waves:     #4A6B57;
+  --cat-heat:      #B85C00;
+  --cat-fluids:    #3A6E7A;
+  --cat-optics:    #5C4A00;
+  --cat-modern:    #4A4A4A;
+  --cat-misc:      #6B5A3A;
+
+  --radius: 6px;
+  --shadow: 0 2px 12px rgba(28,28,28,0.10);
+  --shadow-hover: 0 8px 28px rgba(28,28,28,0.18);
+  --transition: 0.22s cubic-bezier(0.4,0,0.2,1);
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: 'Inter', Arial, sans-serif;
+  background: var(--vu-cream);
+  color: var(--vu-black);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.cat-mechanics { background-color: var(--cat-mechanics); }
+.cat-em        { background-color: var(--cat-em); }
+.cat-waves     { background-color: var(--cat-waves); }
+.cat-heat      { background-color: var(--cat-heat); }
+.cat-fluids    { background-color: var(--cat-fluids); }
+.cat-optics    { background-color: var(--cat-optics); }
+.cat-modern    { background-color: var(--cat-modern); }
+.cat-misc      { background-color: var(--cat-misc); }
