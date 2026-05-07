@@ -74,8 +74,35 @@
   background: rgba(207, 174, 112, 0.1);
 }
 
-@media (max-width: 600px) {
-  .brandSub { display: none; }
-  .links { gap: 0; }
-  .link { padding: 7px 10px; font-size: 10px; }
+@media (max-width: 768px) {
+  .navInner {
+    padding: 0 16px;
+    height: 52px;
+  }
+
+  .brandSub {
+    display: none;
+  }
+
+  .brandMain {
+    font-size: 13px;
+    white-space: nowrap;
+  }
+
+  .links {
+    padding: 0;
+    gap: 0;
+  }
+
+  .link {
+    flex: 1;
+    text-align: center;
+    font-size: 10px;
+    padding: 6px 8px;
+    letter-spacing: 0.08em;
+    min-height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 }

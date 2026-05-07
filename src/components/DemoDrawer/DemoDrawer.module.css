@@ -182,12 +182,31 @@
   background: rgba(148, 110, 36, 0.06);
 }
 
-@media (max-width: 700px) {
+@media (max-width: 768px) {
   .panel {
     width: 100vw;
+    padding-bottom: env(safe-area-inset-bottom);
+  }
+
+  .header {
+    padding: 20px 20px 18px;
+  }
+
+  .title {
+    font-size: 18px;
+    padding-right: 36px;
+  }
+
+  .body {
+    padding: 20px;
   }
 
   .metaGrid {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .closeBtn {
+    width: 44px;
+    height: 44px;
   }
 }

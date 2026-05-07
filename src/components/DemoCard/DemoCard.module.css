@@ -130,3 +130,17 @@
   color: var(--cat-color, var(--vu-gold-dark));
   transform: translateX(3px);
 }
+
+@media (max-width: 768px) {
+  .cardBody {
+    padding: 14px 16px 12px;
+  }
+
+  .cardTitle {
+    font-size: 14.5px;
+  }
+
+  .cardDesc {
+    font-size: 12px;
+  }
+}

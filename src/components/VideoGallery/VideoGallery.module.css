@@ -199,8 +199,19 @@
   color: var(--vu-gray-dark);
 }
 
-@media (max-width: 600px) {
+@media (max-width: 768px) {
   .videosSection {
     padding: 20px 16px 40px;
+  }
+
+  .videoItem {
+    padding: 12px 14px;
+  }
+
+  .videoTitle {
+    font-size: 13px;
+    white-space: normal;
+    overflow: visible;
+    text-overflow: unset;
   }
 }
